@@ -1,0 +1,31 @@
+<div style="padding-left: 30%; padding-right: 30%; padding-top: 5%">
+    <div class="card" >
+        <div style="margin: 10%;">
+
+            <h2>Current Array: {{arr}}</h2>    
+            <div class="mb-3">
+                <label class="form-label">Add a Number</label>
+                <input type="number" class="form-control" [(ngModel)]="input_btn">
+                
+                <div id="emailHelp" class="form-text"><button class="btn btn-primary" type="button" (click)="addNumber()">Add</button></div>
+            </div>
+        
+            <div class="mb-3">
+                <label class="form-label">Delete a Number</label>
+                <input type="number" class="form-control" [(ngModel)]="delete_btn">
+                
+                <div id="emailHelp" class="form-text"><button class="btn btn-primary" type="button" (click)="deleteNumber()">Del</button></div>
+            </div>
+        
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <button class="btn btn-primary btn-md center-block" Style="width: 100px;"  type="button" (click)="sortArray()">Sort</button>
+                    <button class="btn btn-danger btn-md center-block" Style="width: 100px;"  type="button" (click)="suffleArray()">Suffle</button>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
